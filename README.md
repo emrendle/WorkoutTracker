@@ -2,7 +2,9 @@
 
 ## Description
 
-This project was designed to make the process of generating a README more streamlined by providing the user with prompts for each major section of the README.
+The purpose of this project was to create a workout tracker that allows a user to log multiple exercises within a workout in order to live a healthier, more organized lifestyle. This project utilizes MongoDB to store user inputs.
+
+[Visit the deployed application](https://desolate-plateau-88804.herokuapp.com/)
 
 ## Table of Contents
 
@@ -15,13 +17,13 @@ This project was designed to make the process of generating a README more stream
 
 ## Installation
 
-This project requires Node.js and npm Inquirer. The user will need to npm i inquirer before running this script in terminal with using Node.
+The user does not require any installations for usage. For development, this project requires Node.js as well as Mongoose.js and Express.js. The developer will need to run `npm i` before working with the code in this repository.
 
 ## Usage
 
-Once the user has installed the necessary dependencies, the index.js file can be run in terminal using Node. This provides the user with prompts for each section of the README. The user's answers are used to generate a README file with all the appropriate licensing and associated badges.
+The user can create a new workout by clicking the "New Workout" button, and select from two types of exercises, or the user can choose to continue adding exercises to an existing workout by selecting "Continue Workout". The user can also view their cumulative stats across all workouts on the Dashboard page, displayed below.
 
-![A demonstration of the README Generator using sample inputs](assets/READMEGen.gif).
+![A screenshot of the Workout Tracker Dashboard](assets/WorkoutTrackerDashboard.png).
 
 ## Contributing
 
