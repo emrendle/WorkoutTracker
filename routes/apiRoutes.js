@@ -3,13 +3,13 @@ const Workout = require("../models/Workout.js");
 
 router.get("/api/workouts", (req, res) => {
   Workout.find({}, (error, data) => {
-    // loops through each workout in the response data and sets the total duration to the duration of each exercise so that it can be appropriately displayed on the page, otherwise total duration is left blank
+    // loops through each workout and sums the duration of each individual exercise to create a total duration for the entire workout - need this to display the total duration on the home page
     data.forEach((workout) => {
-      let exerciseDuration = 0;
+      let totalDuration = 0;
       workout.exercises.forEach((exercise) => {
-        exerciseDuration += exercise.duration;
+        totalDuration += exercise.duration;
       });
-      workout.totalDuration = exerciseDuration;
+      workout.totalDuration = totalDuration;
     });
     if (error) {
       res.send(error);
