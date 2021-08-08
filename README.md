@@ -23,7 +23,7 @@ The user does not require any installations for usage. For development, this pro
 
 The user can create a new workout by clicking the "New Workout" button, and select from two types of exercises, or the user can choose to continue adding exercises to an existing workout by selecting "Continue Workout". The user can also view their cumulative stats across all workouts on the Dashboard page, displayed below.
 
-![A screenshot of the Workout Tracker Dashboard](assets/WorkoutTrackerDashboard.png).
+![A screenshot of the Workout Tracker Dashboard](assets/images/WorkoutTrackerDashboard.png).
 
 ## Contributing
 
